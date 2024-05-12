@@ -1,0 +1,54 @@
+#container {
+  height: 600vh;
+}
+
+.title {
+  border-bottom: 3px solid #7B1FA2;
+}
+
+.lobby_info {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.desc {
+  margin: 10px;
+}
+
+.productTypes {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right side of the screen */
+  margin: 20px;
+}
+
+.product_container {
+  display: flex;
+  width: 80%; /* Adjust as needed */
+  margin: 10px auto; /* Adjust as needed */
+}
+
+.product_desc {
+  flex: 1;
+  border: 2px solid #7B1FA2;
+  margin: 10px;
+  padding: 20px;
+}
+
+.product_img {
+  flex: 1;
+  margin: 10px;
+}
+
+  .product_img img {
+    max-width: 100%; /* Ensure image does not exceed its container's width */
+  }
+
+.alternate .product_desc {
+  order: 2; /* Change order of description to make it appear after the image */
+}
+
+.alternate .product_img {
+  order: 1; /* Change order of image to make it appear before the description */
+}
+
+

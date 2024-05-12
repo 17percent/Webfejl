@@ -1,0 +1,70 @@
+<div>
+  <app-loading></app-loading>
+</div>
+<div id="container" *ngIf="showContent">
+  <h1><span class="title">This is Your Profile Page</span></h1>
+  <mat-icon>account_circle</mat-icon>
+  <div class="userData" *ngIf="currentUser">
+    <mat-card>
+      <mat-card-content>
+        <p><mat-icon>badge</mat-icon> : <span class="userInfo">{{ currentUser.nickname }}</span></p>
+        <p><span><mat-icon>mail</mat-icon> : </span><span class="userInfo">{{ currentUser.email }}</span></p>
+        <p><span><mat-icon>location_on</mat-icon> : </span><span class="userInfo">{{ currentUser.address }}</span></p>
+        <p><span><mat-icon>account_balance_wallet</mat-icon> : </span><span class="userInfo">{{ currentUser.balance }}</span></p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="edits">
+    <div>
+      <h2>Edit Address</h2>
+      <form (ngSubmit)="addressFormSubmit()" [formGroup]="addressForm">
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-label for="address">New Address: </mat-label>
+            <input matInput type="text" id="address" formControlName="address" />
+          </mat-form-field>
+        </div>
+        <span>
+          <button type="submit">update</button>
+        </span>
+      </form>
+    </div>
+    <div>
+      <h2>Edit Balance</h2>
+      <form (ngSubmit)="balanceFormSubmit()" [formGroup]="balanceForm">
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-label for="balance">Add to balance: </mat-label>
+            <input matInput type="number" id="balance" formControlName="balance" />
+          </mat-form-field>
+        </div>
+        <span>
+          <button type="submit">update</button>
+        </span>
+      </form>
+    </div>
+  </div>
+  <div class="account-control">
+    <div>
+      <p>
+        If you wish to delete your account, we highly suggest you reauthenticate yourself!
+      </p>
+      <p>
+        Simply logout, login again and click "Delete my account."
+      </p>
+      <p>
+        This will allow you to remove authentication and all your data as well! 
+      </p>
+      <button (click)="deleteAccount()">Delete My Account</button>
+    </div>
+    <div>
+      <p>
+        If you wish to logout you can simply do so by clicking the button below.
+      </p>
+      <p>
+        <mat-icon>logout</mat-icon>
+      </p>
+      <button (click)="logout()">Logout</button>
+    </div>
+  </div>
+</div>

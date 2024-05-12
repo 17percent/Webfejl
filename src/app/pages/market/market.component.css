@@ -1,0 +1,48 @@
+
+.product-container {
+  /* Ensure container does not overflow */
+  width: 100%;
+  height: 100vi;
+}
+
+.product-item {
+  /* Set width and margin to create space between items */
+  width: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left; /* or display: inline-block; */
+  width: 32%;
+  text-align: center;
+}
+
+  .product-item img {
+    /* Set fixed width and height to ensure all images have the same size */
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
+  }
+
+button {
+  color: white;
+  background-color: #7B1FA2;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+  button:hover {
+    background-color: black;
+  }
+
+.product_info {
+  border-radius: 8px;
+  border: 2px solid #7B1FA2;
+  margin: 30px;
+}
+
+.title {
+  border-bottom: 3px solid #7B1FA2;
+}
+
+.market_info {
+  text-align: center;
+}

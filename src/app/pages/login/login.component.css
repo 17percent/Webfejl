@@ -1,0 +1,29 @@
+.container {
+  text-align: center;
+  justify-content: center;
+  height: 100vi;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+}
+
+  .register div {
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #7B1FA2;
+    margin: 20px;
+  }
+
+button {
+  color: white;
+  background-color: #7B1FA2;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+  button:hover {
+    background-color: black;
+  }
+

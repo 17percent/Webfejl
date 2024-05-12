@@ -1,0 +1,27 @@
+<div>
+  <app-loading></app-loading>
+</div>
+<div id="container" *ngIf="showContent">
+  <div class="lobby_info">
+    <h1><span class="title">Lobby</span></h1>
+    <p class="desc">
+      Showcasing all the different type of clothing items you can get by ordering a mystery box.
+    </p>
+    <p class="desc">
+      Each box contains one piece of clothing of all 5 types.
+    </p>
+    <p class="desc">
+      Quality and durability increases with box level.
+    </p>
+  </div>
+  <div *ngFor="let p of productTypes; let i = index" class="productTypes">
+    <div class="product_container" [ngClass]="{'alternate': i % 2 !== 0}">
+      <div class="product_desc">
+        <p>{{ p.desc }}</p>
+      </div>
+      <div class="product_img">
+        <img [src]="p.imageUrl" alt="product Image">
+      </div>
+    </div>
+  </div>
+</div>

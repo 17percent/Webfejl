@@ -1,0 +1,26 @@
+#container {
+  height: 100vh;
+}
+
+.title {
+  border-bottom: 3px solid #7B1FA2;
+}
+
+.purchase_info {
+  text-align: center;
+}
+
+.user_address {
+  border-bottom: 3px solid #7B1FA2;
+}
+
+button {
+  color: white;
+  background-color: #7B1FA2;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+  button:hover {
+    background-color: black;
+  }

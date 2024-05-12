@@ -1,0 +1,17 @@
+.container {
+  text-align: center;
+  justify-content: center;
+  height: 100vi;
+}
+
+button {
+  color: white;
+  background-color: #7B1FA2;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+  button:hover {
+    background-color: black;
+  }
+

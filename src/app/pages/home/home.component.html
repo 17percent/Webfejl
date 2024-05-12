@@ -1,0 +1,55 @@
+<div>
+  <app-loading></app-loading>
+</div>
+<div id="container" *ngIf="showContent">
+  <div class="home-intro">
+    <h1><span class="title">Welcome to Phabric</span></h1>
+    <span class="quote"><em>Your #1 clothing webshop</em></span>
+    <h2>Here's what we offer:</h2>
+    <div class="content">
+      <div class="card-info">
+        <p><mat-icon>high_quality</mat-icon></p>
+        <p>High Quality</p>
+      </div>
+      <div class="card-info">
+        <p><mat-icon>verified</mat-icon></p>
+        <p>Verified sources</p>
+      </div>
+      <div class="card-info">
+        <p><mat-icon>recycling</mat-icon></p>
+        <p>Recycled materials</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="card">
+        <mat-card>
+          <mat-card-content>We're dedicated to crafting timeless designs that stand the test of time, 
+          ensuring that your investment in sustainable fashion lasts for years to come. <br><br> From classic
+          staples to on-trend pieces, our collection offers something for every style and occasion
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="card">
+        <mat-card>
+          <mat-card-content>Crafted with precision and care, our clothes are made from premium materials
+          sourced from trusted suppliers around the globe. <br><br> From luxurious cottons to soft, breathable linens,
+          we select only the finest fabrics to ensure superior comfort and durability with every wear.
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="card">
+        <mat-card>
+          <mat-card-content>Each garment in our collection is crafted using innovative recycled fabrics that
+          give new life to materials that would otherwise end up in landfills. <br><br> By choosing recycled materials,
+          we're able to minimize waste and conserve valuable resources.
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <mat-icon>info</mat-icon>
+    <p>Before you start exploring the pages, please take a minute to read our TOS.</p>
+    <button mat-button (click)="openTOS()">View Terms of Service</button>
+  </div>
+</div>

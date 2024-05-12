@@ -1,0 +1,71 @@
+#container {
+    height: 100vi;
+}
+
+
+.home-intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  border-bottom: 3px solid #7B1FA2;
+}
+
+.quote {
+  top: 0;
+  padding-top: 0;
+}
+
+.content {
+  overflow: auto;
+  width: auto;
+}
+
+mat-card {
+  background-color: #7B1FA2;
+  width: 200px;
+  height: 200px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.card {
+  display: flex;
+  float: left;
+  width: 32.9%;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.card-info {
+  float: left;
+  width: 32.9%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.card-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  justify-content: center;
+  text-align: center;
+}
+
+button {
+  color: white;
+  background-color: #7B1FA2;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+  button:hover {
+    background-color: black;
+  }
+
+

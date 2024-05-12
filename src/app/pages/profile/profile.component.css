@@ -1,0 +1,63 @@
+#container {
+  text-align: center;
+  justify-content: center;
+  height: 100vi;
+}
+
+.title {
+  border-bottom: 3px solid #7B1FA2;
+}
+
+.userData {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.userData p {
+    text-align: left;
+}
+
+mat-card {
+  background-color: #7B1FA2;
+}
+
+.userData mat-icon {
+  float: left;
+}
+
+.edits {
+  display: flex;
+  justify-content: center;
+}
+
+  .edits div {
+    width: 100%;
+  }
+
+button {
+  color: white;
+  background-color: #7B1FA2;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+  button:hover {
+      background-color: black;
+  }
+
+.account-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+  .account-control div {
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #7B1FA2;
+    margin: 20px;
+  }
+
+

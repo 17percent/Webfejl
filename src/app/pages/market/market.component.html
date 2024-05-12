@@ -1,0 +1,17 @@
+<div>
+  <app-loading></app-loading>
+</div>
+<div *ngIf="showContent" class="product-container">
+  <div class="market_info">
+    <h1><span class="title">Marketplace</span></h1>
+  </div>
+  <div *ngFor="let p of products" class="product-item">
+    <p>{{ p.name }}</p>
+    <img [src]="p.imageUrl" alt="Product Image">
+    <div class="product_info">
+      <p>Price: {{ p.discountedPrice }}</p>
+      <p>Discount: {{ p.discountedPrice | discountPercentage: p.originalPrice }}%</p>
+    </div>
+    <button (click)="purchaseProduct(p.discountedPrice)">Buy</button>
+  </div>
+</div>

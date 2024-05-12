@@ -1,0 +1,20 @@
+.back-to-top {
+  background-color: #7B1FA2;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+}
+
+.sidenav {
+  background-color: #7B1FA2;
+  color: white;
+}
+
+.balance {
+    margin-left: auto;
+}
+

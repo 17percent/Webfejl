@@ -1,0 +1,17 @@
+<div>
+  <app-loading></app-loading>
+</div>
+<div id="container" *ngIf="showContent">
+  <div class="purchase_info" *ngIf="currentUser">
+    <h1><span class="title">Thank you for shopping with us!</span></h1>
+    <p>Your order is being delivered to your address: <span class="user_address"><b>{{ currentUser.address }}</b></span></p>
+    <p>
+      <mat-icon>inventory_2</mat-icon>
+      <mat-icon>keyboard_double_arrow_right</mat-icon>
+      <mat-icon>local_shipping</mat-icon>
+    </p>
+    <p><button (click)="continueShopping()">Continue shopping</button></p>
+    <p><button (click)="goToProfile()">Go to Profile</button></p>
+    <p><button (click)="goToLobby()">Go to Lobby</button></p>
+  </div>
+</div>

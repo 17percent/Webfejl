@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "phabric-af18a": {
+      "hosting": {
+        "webfejl-project": [
+          "phabric-af18a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "phabric-af18a"
+  }
+}

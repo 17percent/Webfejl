@@ -1,0 +1,38 @@
+.dialog-container {
+  max-width: 500px; /* Adjust this value as needed */
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  background-color: #7B1FA2;
+}
+
+.dialog-content {
+  max-height: 200px; /* Adjust this value as needed */
+  overflow-y: auto; /* or overflow-y: scroll; */
+  background-color: #424242;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.dialog-content p {
+  font-size: 10px;
+}
+
+.dialog-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+button {
+  color: white;
+  background-color: #424242;
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+  button:hover {
+    background-color: black;
+  }
